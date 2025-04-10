@@ -1,7 +1,6 @@
 function getShippingCost(country) {
-  shippingCountry = country;
-  let fee = 100;
-  switch (shippingCountry) {
+  let fee;
+  switch (country) {
     case "Australia":
       fee = 170;
       return `Shipping to ${country} will cost ${fee} credits`;
@@ -22,7 +21,6 @@ function getShippingCost(country) {
       return `Shipping to ${country} will cost ${fee} credits`;
       break;
     case "Sweden":
-      fee = 120;
       return `Sorry, there is no delivery to your country`;
       break;
   }
