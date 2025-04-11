@@ -5,9 +5,6 @@ function getShippingCost(country) {
       fee = 170;
       return `Shipping to ${country} will cost ${fee} credits`;
       break;
-    case "Germany":
-      return `Sorry, there is no delivery to your country`;
-      break;
     case "China":
       fee = 100;
       return `Shipping to ${country} will cost ${fee} credits`;
@@ -20,9 +17,8 @@ function getShippingCost(country) {
       fee = 120;
       return `Shipping to ${country} will cost ${fee} credits`;
       break;
-    case "Sweden":
+    default:
       return `Sorry, there is no delivery to your country`;
-      break;
   }
 }
 
